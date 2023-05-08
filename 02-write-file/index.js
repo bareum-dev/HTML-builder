@@ -11,7 +11,7 @@ stdout.write(
 );
 
 stdin.on("data", (message) => {
-  if (message == "exit") {
+  if (message.toString().trim() == "exit") {
     console.log("Writing to file has been completed");
     process.exit();
   } else
